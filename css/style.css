@@ -1,0 +1,143 @@
+body {
+    font-family: sans-serif;
+    color: #1e1e1e;
+    padding-top: 0.25rem;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    text-indent: 2rem;
+  }
+  
+  .wrapper {
+    max-width: 1200px;
+    min-width: 360px;
+    width: 90%;
+    margin: auto;
+    box-shadow: 2px 2px 2px 2px hsla(0, 0%, 0%, 0.2);
+    margin-bottom: 0.5rem;
+    padding: 0.25rem;
+  }
+  
+  section {
+    border: 2px solid lightgray;
+    margin-bottom: 0.25rem;
+    box-sizing: border-box;
+    padding: 1rem;
+  }
+  
+  .flex-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    section {
+      width: 49%;
+    }
+    .img-wrp {
+      width: 49%;
+    }
+  }
+  
+  .comment {
+    color: grey;
+    font-style: italic;
+    padding: 0 0.25rem;
+  }
+  
+  .comment::before {
+    content: "/* ";
+  }
+  
+  .comment::after {
+    content: " */";
+  }
+  
+  pre {
+    background: #0b1015;
+    color: #f7a73d;
+    padding-left: 1rem;
+    border-radius: 6px;
+    box-shadow: 1px 1px 2px 2px hsla(0, 0%, 0%, 0.2);
+  }
+  
+  th,
+  td {
+    border: 1px solid grey;
+    padding: 0.25rem 0.5rem;
+  }
+  
+  tfoot,
+  tfoot .td--light {
+    background: #c1c1c1;
+  }
+  
+  .td--light {
+    background: #e1e1e1;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  li {
+    margin-bottom: 1rem;
+  }
+  a {
+    text-shadow: 1px 1px 3px hsla(0, 0%, 0%, 0.2);
+    text-decoration: none;
+    color: darkslateblue;
+    text-decoration: transparent wavy underline;
+    transition: all 0.4s ease-in-out 0.1s;
+  }
+  
+  a:hover {
+    transition: all 0.4s ease-in-out 0.1s;
+    text-decoration: darkslateblue wavy underline;
+  }
+  
+  .handwriting {
+    font-family: "Bad Script", cursive;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #0a0;
+  }
+  
+  .parentHideElem {
+    position: relative;
+    cursor: pointer;
+    background: #eee;
+  }
+  
+  .hideElem {
+    position: absolute;
+    right: 1rem;
+    opacity: 0;
+  }
+  
+  .parentHideElem:hover .hideElem {
+    opacity: 1;
+    color: red;
+  }
+  
+  .img-wrp {
+    box-shadow: 2px 2px 2px 2px hsla(0, 0%, 0%, .2);
+  }
+  
+  .img-wrp img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
